@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript class1</title>
+</head>
+
+<body>
+    <h1>
+        Hello
+    </h1>
+    <button onclick="changeText()"> clik me</button>
+<button onclick="backtohome()">Home</button>
+<script>
+    function changeText (){
+        console.log("changeText function called");
+        document.querySelector("h1").innerText= 'Welcome JS!';
+    }
+
+
+    function backtohome(){
+        document.querySelector("h1").innerText = "Home";
+    }
+</script>
+</body>
+
+</html>
