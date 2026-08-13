@@ -68,24 +68,34 @@
 
 
 
-var fruitsNames = ["apple","banana"];
+// var fruitsNames = ["apple","banana"];
 
-// console.log("fruitName-->", fruitsNames);
-// console.log("fruitlist-length->", fruitsNames.length); 
+// // console.log("fruitName-->", fruitsNames);
+// // console.log("fruitlist-length->", fruitsNames.length); 
 
 // fruitsNames.push("mango","pinepapple","orange","pomogranete");
 
 
 
+//  console.log("fruitName-->", fruitsNames);
+// // // var name ="harshavardhan";
+// // console.log("fruitList-->",fruitsNames.length) 
 
-// console.log("fruitName-->", fruitsNames);
-// // var name ="harshavardhan";
-// console.log("fruitList-->",fruitsNames.length) 
+// //  fruitsNames.shift(); //to remove array element
+// //   fruitsNames.shift(); 
 
-//  fruitsNames.shift();
-//   fruitsNames.shift();
+// fruitsNames.unshift(); // to retrive removed arrays element
 
-fruitsNames.unshift();
+//  console.log("fruitName-->", fruitsNames);
+// console.log("fruitList-->",fruitsNames.length);
 
- console.log("fruitName-->", fruitsNames);
-console.log("fruitList-->",fruitsNames.length);
+
+var fruitNames = ['apple', 'banana', 'mango', 'pinepapple', 'orange', 'pomogranete',23];
+
+console.log( fruitNames[0],fruitNames[1],fruitNames[2],fruitNames[3],fruitNames[4],fruitNames[5], fruitNames[6]);
+
+console.log(fruitNames.length);
+
+fruitNames[6] ="Melon";
+
+console.log( fruitNames);
