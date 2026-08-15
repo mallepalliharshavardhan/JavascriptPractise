@@ -13,3 +13,18 @@ console.log(fruitlist);
 fruitlist.pop("Guva");
 
 console.log(fruitlist);
+
+// program to remove a fruit at the beginning of an array using shift()
+
+fruitlist.shift();
+fruitlist.shift();
+fruitlist.shift();
+
+console.log(fruitlist);
+
+// program to add a fruit at the beginning of an array using unshift()
+ 
+fruitlist.unshift();
+fruitlist.unshift();
+fruitlist.unshift();
+ console.log(fruitlist);
