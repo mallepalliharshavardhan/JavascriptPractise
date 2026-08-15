@@ -1,6 +1,6 @@
 //-----------------  program to print a grade based on marks ---------
 
-var marks = 44;
+var marks = 76;
 
 if(marks < 35 ){
     console.log("Grade: F");
@@ -14,4 +14,3 @@ if(marks < 35 ){
     console.log("Grade: A");
 }
 
-/
