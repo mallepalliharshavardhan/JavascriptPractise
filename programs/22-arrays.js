@@ -9,3 +9,7 @@ console.log(li[0]);
 // 23. Write a program to print the last element of an array
 
 console.log(li[2]);
+
+// 24. Write a program to print all elements of an array
+
+console.log(li);
