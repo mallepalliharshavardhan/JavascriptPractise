@@ -7,3 +7,9 @@ console.log(fruitlist);
 fruitlist.push("Guva");
 
 console.log(fruitlist);
+
+//remove the last fruit from an array using pop()
+
+fruitlist.pop("Guva");
+
+console.log(fruitlist);
