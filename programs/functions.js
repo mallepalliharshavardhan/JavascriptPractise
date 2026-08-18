@@ -80,3 +80,18 @@ function voteEligible(a){
 }
 voteEligible(12);
 voteEligible(52);
+
+
+//---------------------------------------------------------------------
+
+function examResults(a){
+    if(a >= 35){
+        console.log("Subject Passed");
+    }
+    else{
+        console.log("Subject failed");
+    }
+}
+
+examResults(32);
+examResults(74);
