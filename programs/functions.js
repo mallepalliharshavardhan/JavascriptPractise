@@ -69,3 +69,14 @@ integerType(450);
 integerType(45);
 
 //------------------------------------------------------------------
+
+function voteEligible(a){
+    if(a >= 18){
+        console.log("Eligible to vote");
+    }
+    else{
+        console.log("Ineligible to vote");
+    }
+}
+voteEligible(12);
+voteEligible(52);
