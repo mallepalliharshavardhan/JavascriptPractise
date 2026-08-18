@@ -180,13 +180,44 @@ else if ( age > 55 ){
 }
  
 
-let Child = ageCat(age);
-console.log(ageCat(11));
+let Child = ageCat(11);
+console.log(Child);
 
-let teenager = ageCat(age);
-console.log(ageCat(17));
+let teenager = ageCat(17);
+console.log(teenager);
 
-let youth = ageCat(age);
-console.log(ageCat(24));
+let youth = ageCat(24);
+console.log(youth);
 
 //------------------------------------------------------------------
+
+function temp(temp){
+
+
+if( temp < 0){
+    return "Freezing temperature";
+}
+if ( temp > 0 && temp < 20){
+    return "Cold temperature";
+}
+else if ( temp >= 20 && temp < 28){
+    return "Room temperature";
+}
+else if ( temp > 28 ){
+    return "Hot temperature";
+}
+}
+
+let temp1 = temp(-1);
+console.log(temp1);
+
+
+let temp2 = temp(10);
+console.log(temp2);
+
+
+let temp3 = temp(20);
+console.log(temp3);
+
+let temp4 = temp(31);
+console.log(temp4);
