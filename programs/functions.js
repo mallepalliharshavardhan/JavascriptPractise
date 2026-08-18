@@ -114,12 +114,16 @@ greaternum(10,114);
 
 function lock(a){
     if(a === 'Password'){
-        console.log('passowrd Unlocked');
+        return 'passowrd Unlocked';
     }
     else{
-        console.log('Password Incorrect');
+        return'Password Incorrect';
     }
 }
 
-lock('key');
-lock('Password');
+let result1 = lock('key');
+let result2 = lock('Password');
+
+console.log(result1);
+console.log(result2);
+//
