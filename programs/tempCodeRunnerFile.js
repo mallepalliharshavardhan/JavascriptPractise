@@ -1,1 +1,1 @@
-console.log(examGrades(32))
+console.log(ageCat(24));

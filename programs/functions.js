@@ -154,3 +154,39 @@ console.log(examGrades(74));
 
 let marks3 = examGrades(92);
 console.log(examGrades(92));
+
+//------------------------------------------------------------------------------
+
+
+function ageCat(age) {
+
+    if( age < 12){
+    return "Child";
+
+} 
+else if (age > 12 && age < 19){
+    return "Teenager";
+}
+else if( age > 20 && age < 30){
+    return "Youth";
+
+}
+else if( age > 30 && age < 55){
+    return "Middle aged";
+}
+else if ( age > 55 ){
+    return "Senior citizen";
+}
+}
+ 
+
+let Child = ageCat(age);
+console.log(ageCat(11));
+
+let teenager = ageCat(age);
+console.log(ageCat(17));
+
+let youth = ageCat(age);
+console.log(ageCat(24));
+
+//------------------------------------------------------------------
