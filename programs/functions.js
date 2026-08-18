@@ -95,3 +95,17 @@ function examResults(a){
 
 examResults(32);
 examResults(74);
+
+//------------------------------------------------------------------------
+
+function greaternum(a,b){
+    if (a > b){
+        console.log(a,"greater than", b);
+    }
+    else{
+        console.log(a,"less than", b);
+    }
+}
+
+greaternum(10,7);
+greaternum(10,114);
