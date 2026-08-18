@@ -109,3 +109,17 @@ function greaternum(a,b){
 
 greaternum(10,7);
 greaternum(10,114);
+
+//--------------------------------------------------------------------------
+
+function lock(a){
+    if(a === 'Password'){
+        console.log('passowrd Unlocked');
+    }
+    else{
+        console.log('Password Incorrect');
+    }
+}
+
+lock('key');
+lock('Password');
