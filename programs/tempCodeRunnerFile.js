@@ -1,0 +1,1 @@
+console.log(examGrades(32))

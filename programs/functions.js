@@ -126,4 +126,31 @@ let result2 = lock('Password');
 
 console.log(result1);
 console.log(result2);
-//
+
+//---------------------------------------------------------------------------
+
+function examGrades(marks){
+    if(marks < 35 ){
+    return "Grade: F";
+}else if(marks >= 35 && marks < 45 ){
+    return "Grade: P";
+}else if (marks >= 45 && marks < 65) {
+    return "Grade: C";
+}else if (marks >=65 && marks < 75) {
+    return "Grade: B";
+}else if (marks >= 75 && marks <= 100 ) {
+    return "Grade: A";
+}
+
+}
+let marks1 = examGrades(32);
+console.log(examGrades(32));
+
+let marks4 = examGrades(42);
+console.log(examGrades(42));
+
+let marks2 = examGrades(72);
+console.log(examGrades(74));
+
+let marks3 = examGrades(92);
+console.log(examGrades(92));
