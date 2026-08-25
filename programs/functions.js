@@ -351,4 +351,36 @@
     //    console.log("count of numbers greater than 10 is",count);
 
 
-    
+  //Q5 — Sum of even numbers
+  
+//   const numbers = [3, 8, 11, 14, 20, 25];
+// let sumOfEven =0;
+//   for (let i =0; i<= numbers.length-1; i++){
+//     if(numbers[i] % 2=== 0){
+        
+//         sumOfEven += numbers[i] ;
+//     }
+//   }
+//   console.log(sumOfEven);
+
+//: Reverse an array
+
+// const numbers = [10, 20, 30, 40];
+// let newArray = [];
+// for (let  i = numbers.length-1 ; i >= 0 ; i-- ){
+//     newArray.push(numbers[i]);
+// }
+
+// console.log(newArray);
+
+// Reverse Araay  Function
+let i;
+let newArray = [];
+let reverseArray = (numbers) => {
+    for ( i = numbers.length-1 ; i>=0 ; i--){
+     newArray.push(numbers[i]);
+    }
+    return newArray ; 
+}
+
+console.log(reverseArray([3,8,12,7,20]));
