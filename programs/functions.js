@@ -340,24 +340,24 @@
 // if(numbers[i] % 2 === 1){ console.log(numbers[i]) }
 //     }
 
-    //    const numbers = [4, 7, 10, 13, 16, 21];
-       
-    //    let count= 0;
-    //    for (let i=0 ; i <= numbers.length-1 ; i++){
-    //     if( numbers[i] > 10 ){
-    //         count++ ;
-    //     }
-    //    }
-    //    console.log("count of numbers greater than 10 is",count);
+//    const numbers = [4, 7, 10, 13, 16, 21];
+
+//    let count= 0;
+//    for (let i=0 ; i <= numbers.length-1 ; i++){
+//     if( numbers[i] > 10 ){
+//         count++ ;
+//     }
+//    }
+//    console.log("count of numbers greater than 10 is",count);
 
 
-  //Q5 — Sum of even numbers
-  
+//Q5 — Sum of even numbers
+
 //   const numbers = [3, 8, 11, 14, 20, 25];
 // let sumOfEven =0;
 //   for (let i =0; i<= numbers.length-1; i++){
 //     if(numbers[i] % 2=== 0){
-        
+
 //         sumOfEven += numbers[i] ;
 //     }
 //   }
@@ -374,13 +374,37 @@
 // console.log(newArray);
 
 // Reverse Araay  Function
-let i;
-let newArray = [];
-let reverseArray = (numbers) => {
-    for ( i = numbers.length-1 ; i>=0 ; i--){
-     newArray.push(numbers[i]);
+
+// let newArray = [];
+// let reverseArray = (numbers) => {
+//     for ( let i = numbers.length-1 ; i>=0 ; i--){
+//      newArray.push(numbers[i]);
+//     }
+//     return newArray ; 
+// }
+
+// console.log(reverseArray([3,8,12,7,20]));
+
+
+// prime number
+
+let isPrime = (num) => {
+  if (num < 2) {
+    return "Not a Prime";
+
+  }
+  else {
+    for (i = 2; i <= num; i++) {
+      if (num % i === 0) {
+        return "not a prime num";
+      }
+      else {
+        return "Prime num";
+      }
     }
-    return newArray ; 
+  }
+
+
 }
 
-console.log(reverseArray([3,8,12,7,20]));
+console.log(isPrime(7));
