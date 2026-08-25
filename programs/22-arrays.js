@@ -2,7 +2,7 @@
 
 //  22. Write a program to print the first element of an array
 
-var li = ["first element", " second element", "last element"];
+const li = ["first element", " second element", "last element"];
 
 console.log(li[0]);
 
@@ -17,7 +17,7 @@ console.log(li);
 
 //25. Write a program to print numbers greater than 10 from an array
 
-var nums = [1,2,10,28,3,53,5,8,18];
+const nums = [1,2,10,28,3,53,5,8,18];
 
 for (i =0  ; i < nums.length ; i++){
     if (nums[i] > 10){
@@ -32,3 +32,14 @@ for (i=0 ; i < nums.length ; i++){
         console.log("Even numbers in array",nums[i]);
     }
 }
+
+console.log(li.reverse());
+
+
+console.log(li.sort());
+
+console.log(nums.reverse())
+
+console.log(nums.sort((a,b) => b -a));
+
+console.log(nums.sort((a,b)=> a - b))

@@ -1,1 +1,1 @@
-console.log(ageCat(24));
+const numbers = [5, 10, 15, 20];
