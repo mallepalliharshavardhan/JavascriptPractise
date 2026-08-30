@@ -1,47 +1,67 @@
-// ---15. a program to print numbers from 1 to 5 -------------
+// // ---15. a program to print numbers from 1 to 5 -------------
 
 
-console.log("List of numbers");
-for (i = 1; i <= 5; i++) {
-    console.log(i);
+// console.log("List of numbers");
+// for (i = 1; i <= 5; i++) {
+//     console.log(i);
+// }
+
+
+// //---- 16.program to print numbers from 5 to 1 -----------------
+
+// console.log("List of numbers in reverse");
+// for (i = 5; i >= 1; i--) {
+//     console.log(i);
+// }
+
+// // --17.  program to print even numbers from 1 to 10 ----
+
+
+
+//     for (i = 0; i <= 10; i++) {
+
+//         if (i % 2 === 0){
+
+//             console.log(i);
+//         }
+//      }
+
+// // -- 18. program to print odd numbers from 1 to 10
+
+// for (i = 0; i <= 10; i++) {
+
+//         if (i % 2 !== 0){
+
+//             console.log(i);
+//         }
+//      }
+// //--- 19. program to print numbers divisible by 5 from 1 to 20 --
+
+// for (i = 0; i <= 20; i++) {
+
+//         if (i % 5 === 0){
+
+//             console.log(i);
+//         }
+//      }
+
+// for each
+
+// const numbers = [10, 20, 30, 40, 50];
+
+// numbers.forEach(element => {
+//     let i ; console.log(element);
+// });
+
+// let num = [10, 20, 30, 40, 50];
+
+// num.forEach((element => console.log(element)));
+
+let greet = "hello";
+let reverseStr=[];
+
+for(let i = greet.length-1 ;i >= 0 ; i--){
+    
+    reverseStr += greet ;
+    console.log(greet[i])
 }
-
-
-//---- 16.program to print numbers from 5 to 1 -----------------
-
-console.log("List of numbers in reverse");
-for (i = 5; i >= 1; i--) {
-    console.log(i);
-}
-
-// --17.  program to print even numbers from 1 to 10 ----
-
-
-
-    for (i = 0; i <= 10; i++) {
-
-        if (i % 2 === 0){
-
-            console.log(i);
-        }
-     }
-
-// -- 18. program to print odd numbers from 1 to 10
-
-for (i = 0; i <= 10; i++) {
-
-        if (i % 2 !== 0){
-
-            console.log(i);
-        }
-     }
-//--- 19. program to print numbers divisible by 5 from 1 to 20 --
-
-for (i = 0; i <= 20; i++) {
-
-        if (i % 5 === 0){
-
-            console.log(i);
-        }
-     }
-

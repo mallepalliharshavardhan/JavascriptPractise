@@ -10,3 +10,5 @@ else if(a > b) {
       console.log(a,"is greater than", b);
  
 }
+
+for(i =0 ; )

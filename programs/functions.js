@@ -388,23 +388,40 @@
 
 // prime number
 
-let isPrime = (num) => {
-  if (num < 2) {
-    return "Not a Prime";
+// let isPrime = (num) => {
+//   if (num < 2) {
+//     return false;
 
-  }
-  else {
-    for (i = 2; i <= num; i++) {
-      if (num % i === 0) {
-        return "not a prime num";
-      }
-      else {
-        return "Prime num";
-      }
-    }
-  }
+//   }
+  
+//     for (i = 2; i < num; i++) {
+//       if (num % i === 0) {
+//         return false;
+//       }
+    
+//     }
+// return true ;
 
+// }
 
-}
+// console.log(isPrime(19));
 
-console.log(isPrime(7));
+// const fruits = ["apple", "banana", "mango", "orange", "grape"];
+
+// console.log(fruits.slice(1,4));
+
+// recursive function
+
+//  let countDown = (n)  => {
+//     console.log(n);
+//     if(n > 0) countDown(n-1);
+//  }
+//  console.log(countDown(3));
+
+ // Factorial 
+
+ let factorial = (num) => {
+    if(num === 0) return 1;
+    return num * factorial(num-1);
+ }
+ console.log(factorial(5));

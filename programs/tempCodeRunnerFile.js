@@ -1,1 +1,6 @@
-const numbers = [5, 10, 15, 20];
+const numbers = [1, 2, 3, 4];
+
+// let result = numbers.map((element)=> {
+//   return element *2 ;
+// } ); 
+// console.log(result);
