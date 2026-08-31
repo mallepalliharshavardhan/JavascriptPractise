@@ -78,3 +78,67 @@
 // console.log(product);
 // console.log(shallowProduct);
 // console.log(deepProduct);
+
+// let employee = {
+//     name:"Ram",
+//     projects:["Website","Mobile App"]
+// };
+
+// let deepEmployee = JSON.parse(JSON.stringify(employee));
+// deepEmployee.projects.push("Dashboard");
+
+// console.log(employee);
+// console.log("deepEmployee--",deepEmployee);
+
+// let employee = {
+//     id: 101,
+//     name: "Kiran",
+//     department: {
+//         name: "Development",
+//         location: "Hyderabad"
+//     }
+// };
+
+// let editableEmployee = JSON.parse(JSON.stringify(employee));
+
+// editableEmployee.department.name = "Testing";
+// editableEmployee.department.location = "Bangalore";
+
+// console.log("employee",employee);
+// console.log("editableEmployee",editableEmployee);
+
+
+// let user = {
+//     name: "Arjun",
+//     age: 23,
+//     address: {
+//         city: "Hyderabad"
+//     }
+// };
+
+// let updatedUser = {...user};
+
+// updatedUser.name = "Kiran";
+// updatedUser.age = 24;
+
+// console.log(user);
+// console.log(updatedUser);
+
+
+let account = {
+    username: "arjun123",
+    balance: 25000,
+    profile: {
+        name:"Arjun",
+        city: "Hyderabad"
+    }
+};
+
+let updatedAccount = JSON.parse(JSON.stringify(account));
+
+updatedAccount.balance = 30000;
+updatedAccount.profile.city = "Bangalore";
+
+console.log(account);
+console.log(updatedAccount);
+
