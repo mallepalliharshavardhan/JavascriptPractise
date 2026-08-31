@@ -170,3 +170,12 @@
 //   return elements * elements;
 // });  console.log(res);
 
+// const users = [
+//     { name: "Rahul", age: 22 },
+//     { name: "Priya", age: 24 },
+//     { name: "Arjun", age: 21 }
+// ];
+
+// let res = users.map((element)=> {
+//   return element.name;
+// }) ; console.log(res)
