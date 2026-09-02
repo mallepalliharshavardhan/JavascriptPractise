@@ -1,1 +1,0 @@
-console.log(Account2.balance());
