@@ -1,5 +1,7 @@
     // console.log('start');
 
+const { rejectLimit } = require("async");
+
 // const { reject } = require("async")
 
 // setTimeout(() => {
@@ -121,6 +123,45 @@
 //   console.log("Task completed")
 // },2000)
 
-fetch('https://jsonplaceholder.typicode.com/todos/1')
-      .then(response => response.json())
-      .then(json => console.log(json))
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+//       .then(response => response.json())
+//       .then(json => console.log(json))
+
+// promise 
+
+let productAvailable = true;
+
+let stockUpdate = new Promise((res,rej)=>{
+    if(productAvailable){
+        res("Product Available");
+    }else{
+        rej("Product out of stock");
+    }
+});
+
+// stockUpdate 
+//         .then((message)=>{
+//         console.log(message);
+//       })
+//       .catch((errorMessage)=>{
+//         console.log(errorMessage);
+//       });
+
+
+let age = 17;
+
+let votingEligibility = new Promise((resolve,reject)=>{
+    if( age >=18){
+        resolve(" Eligible to vote");
+    }else{
+        reject(" not eligible to vote");
+    }
+});
+
+votingEligibility
+                .then((message)=>{
+                    console.log(message);
+                })
+                .catch((errorMessage)=>{
+                     console.log(errorMessage);
+                });

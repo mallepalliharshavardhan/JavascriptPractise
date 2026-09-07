@@ -69,7 +69,7 @@
 //   return element.marks >= 50 && 
 //   element.marks <= 80 ;
 // });
- 
+
 
 // console.log(averageStudents);
 
@@ -85,7 +85,7 @@
 // let lenghtFive = names.filter((el)=>{
 //     return el.length > 5;
 // });
- 
+
 // console.log(lenghtFive);
 
 // const words = ["apple", "cat", "banana", "dog", "mango", "elephant"];
@@ -123,16 +123,90 @@
 // let ascPrices = [...products].sort((a,b)=>{
 //     return a.price - b.price});
 
-//     console.log(ascPrices);
+// //     console.log(ascPrices);
 
-const employees = [
-    { name: "Rahul", salary: 45000 },
-    { name: "Arjun", salary: 60000 },
-    { name: "Priya", salary: 35000 }
-];
+// const employees = [
+//     { name: "Rahul", salary: 45000 },
+//     { name: "Arjun", salary: 60000 },
+//     { name: "Priya", salary: 35000 }
+// ];
 
-let alphabeticallyNames = [...employees].sort((a,b)=>{
-  return a.name.localeCompare(b.name);
+// let alphabeticallyNames = [...employees].sort((a,b)=>{
+//   return a.name.localeCompare(b.name);
+// });
+
+// console.log(alphabeticallyNames);
+
+
+// map
+
+// let prices = [100, 200, 300, 400];
+
+// let newPrices = prices.map((element) => {
+//   return element + 50;
+// });
+
+// // console.log(newPrices);
+
+// // project style:--- map()
+
+// let products = [
+//   { name: "Shirt", price: 500 },
+//   { name: "Shoes", price: 1200 },
+//   { name: "Watch", price: 2000 }
+// ];
+
+
+// let newProducts = products.map((element) => {
+//   return {
+//     ...element,
+//     price: element.price + 100
+//   }
+// });
+// console.log(newProducts);
+
+// project style:--- filter()
+
+// let products = [
+//   { name: "Shirt", price: 500, inStock: true },
+//   { name: "Shoes", price: 1200, inStock: false },
+//   { name: "Watch", price: 2000, inStock: true },
+//   { name: "Cap", price: 300, inStock: false }
+// ];
+
+// // let instockProducts = products.filter((element)=>{
+// //   if(element.inStock === true){
+// //     return element.name ;
+// //   }
+// // });  wrong code
+// let instockProducts = products.filter((element)=>{
+//     return element.inStock === true
+
+// });
+
+// console.log(instockProducts);
+
+
+
+// let students = [
+//   { name: "Ravi", marks: 78 },
+//   { name: "Arjun", marks: 32 },
+//   { name: "Priya", marks: 91 },
+//   { name: "Kiran", marks: 40 },
+//   { name: "Anu", marks: 25 }
+// ];
+
+// let studentsPassed = students.filter((element)=>{
+//   return element.marks >= 40;
+// }); console.log(studentsPassed);
+
+
+//   sort
+
+let prices = [500, 1200, 300, 2000, 800];
+
+let descPrice = [...prices].sort((a,b)=>{
+  return b-a ;
 });
-
-console.log(alphabeticallyNames);
+console.log(descPrice);
+console.log(prices)
