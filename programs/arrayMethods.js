@@ -210,3 +210,4 @@ let descPrice = [...prices].sort((a,b)=>{
 });
 console.log(descPrice);
 console.log(prices)
+
