@@ -203,11 +203,23 @@
 
 //   sort
 
-let prices = [500, 1200, 300, 2000, 800];
+// let prices = [500, 1200, 300, 2000, 800];
 
-let descPrice = [...prices].sort((a,b)=>{
-  return b-a ;
-});
-console.log(descPrice);
-console.log(prices)
+// let descPrice = [...prices].sort((a,b)=>{
+//   return b-a ;
+// });
+// console.log(descPrice);
+// console.log(prices)
 
+const product = {
+  name: "Keyboard",
+  stock: 1
+};
+
+if( product.stock >4){
+console.log(product.name, " is available");
+}else if( product.stock >0 && product.stock <5){
+console.log(product.name, " is  Low in Stock ");
+}else if(product.stock === 0){
+console.log(product.name, " is not available ");
+}
