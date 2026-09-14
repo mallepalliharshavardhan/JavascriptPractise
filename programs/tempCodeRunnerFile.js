@@ -1,1 +1,1 @@
-console.log(currentChar);
+console.log(technologies.slice(1,4));
