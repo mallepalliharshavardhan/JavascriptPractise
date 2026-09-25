@@ -12,7 +12,7 @@ let isPrime = (num) => {
     return true;
 }
 
-console.log(isPrime(9));
+console.log(isPrime(17));
 
 //   Reverse a String
  let reverseStr
