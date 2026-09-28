@@ -130,3 +130,128 @@ console.log(updatedemployees);
         return e;
     })
     console.log(editNehaName);
+
+    // destructuring
+
+    const employee = { id: 3, name: "Neha", salary: 30000 };
+
+    const{id,name}= employee ;
+
+    console.log(id,name);
+
+    //---------------
+
+// const field = "salary";
+// const updated = { ...employee, [field]: 35000 };
+
+// console.log(updated);
+
+// const field = "name";
+
+// const updatedName = {...employee,[field]: 'Neha Sharma'}
+
+// console.log(updatedName);
+
+//REduce  UseCase is calculations
+
+// const cart = [
+//   { id: 1, price: 100, quantity: 2 },
+//   { id: 2, price: 50, quantity: 3 }
+// ];
+
+
+// const totalQuantity= cart.reduce((total,item)=>{return  total + item.quantity},0);
+
+// console.log(totalQuantity);
+// const Cart = [
+//   { price: 200, quantity: 2 },
+//   { price: 100, quantity: 1 }
+// ];
+
+// let getDiscountTotal=(Cart,discount)=> {
+//  const totalCartPrice =Cart.reduce((sum, item)=>{return sum + item.price * item.quantity },0);
+
+//  const discountedprice=  totalCartPrice - ((totalCartPrice/100)* discount);
+
+//   return discountedprice;
+ 
+// }
+//  console.log(getDiscountTotal(Cart,10));
+
+
+const Products = [
+  { id: 1, name: "Keyboard", price: 1000 },
+  { id: 2, name: "Mouse", price: 500 }
+];
+
+let IncreasedPrice = Products.map((items)=> ( {...items, price: items.price + (items.price * 0.10)} ))
+
+ 
+
+console.log(IncreasedPrice);
+
+const productName = "Wireless Keyboard";
+
+let Status = productName.trim().toLowerCase().includes
+    ('mouse');
+
+console.log(Status);
+
+const numbers = [4, 3, 1, 2];
+
+for (let j = 0; j < numbers.length - 1; j++) {
+  if (numbers[j] > numbers[j + 1]) {
+    const temporary = numbers[j];
+    numbers[j] = numbers[j + 1];
+    numbers[j + 1] = temporary;
+  }
+}
+
+console.log(numbers); // [3, 1, 2, 4]
+
+
+const Numbers = [4, 3, 1, 2];
+
+for (let pass = 0; pass < Numbers.length - 1; pass++) {
+  for (let j = 0; j < Numbers.length - 1 - pass; j++) {
+    if (Numbers[j] < Numbers[j + 1]) {
+      const temporary = Numbers[j];
+      Numbers[j] = Numbers[j + 1];
+      Numbers[j + 1] = temporary;
+    }
+  }
+}
+
+console.log(Numbers); // [1, 2, 3, 4]
+
+const numberS = [1, 2, 4, 5];
+const n = 5;
+let sum =0;
+let nsum=0;
+
+ for(let i=0; i<= numberS.length-1 ; i++ ){
+    sum += numberS[i];
+ }
+
+ for(let j=1 ;j <= n ; j++){
+    nsum += j;
+ }
+
+ const missingnum= nsum -sum ;
+
+ console.log(missingnum);
+
+ // count frequency
+
+ const word = "hello";
+
+ const count={};
+
+ for( const character of word){
+    if(count[character] === undefined){
+        count [character]= 1;
+    }else{
+        count[character] +=1;
+    }
+ }
+ console.log(count);
