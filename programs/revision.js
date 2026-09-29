@@ -255,3 +255,41 @@ let nsum=0;
     }
  }
  console.log(count);
+
+ //write a function that receives a product array and search text, then returns products whose names contain that text, ignoring capitalization. Try without opening yesterday’s code.
+
+
+
+
+ let searchProduct= (products,searchText)=>{
+  
+  const filteredProducts= products.filter((product)=>{
+   return product.name.trim().toLowerCase().includes(searchText.trim().toLowerCase())
+  });
+
+  return filteredProducts;
+
+ } 
+
+ console.log(searchProduct(Products,'KEYBOARD'));
+
+ const increasedPrices= (products,percentage)=>{
+  let updatedPrice = products.map((product)=> 
+  ({...product,price:(product.price + (product.price/100)* percentage)})
+  );
+  return updatedPrice;
+ }
+console.log(increasedPrices(Products,10));
+
+
+const sortnums = [5, 1, 4, 2];
+let tempNum =0;
+for(const num of sortnums ){
+ for(let i=0; i<=sortnums.length-1 ; i++){
+  if(num < sortnums[i]){
+    tempNum = number[i]
+  }
+ }
+
+}
+
