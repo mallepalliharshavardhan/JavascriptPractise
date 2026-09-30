@@ -297,14 +297,9 @@
 
 let word = 'hello';
 
-wordReversed =word.reverse();
-console.log(wordReversed);
 
-for(let characters of word){
-  for(let i=0; i <=characters.length-1 ; i++){
-    if(characters[i] == characters[0]){
-       word[i] = characters[characters.length]
-       console.log(word)
-    }  
+ 
+  for(let i= word.length-1  ; i >=0 ; i--){
+     console.log(word[i]);
   }
-}
+ 
